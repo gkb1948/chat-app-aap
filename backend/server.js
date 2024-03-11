@@ -6,19 +6,11 @@ import connectToMongoDB from './db/connectToMongoDB.js'
 import messageRoutes from "./route/messageRoutes.js"
 import userRoutes from "./route/userRoutes.js"
 import { app, server } from "./socket/socket.js";
-
 import cookieParser from 'cookie-parser'
-
-// const app = express()
 
 const PORT = process.env.PORT || 5000
 
 const __dirname = path.resolve()
-
-// app.get("/", (req,res) => {
-//     // root route http://localhost:5000
-//     res.send("Hello World!!!")
-// })
 
 dotenv.config()
 
